@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Ali Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+ <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" /> -->
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-bar">
+      <div class="nav-logo">Ali Faiyaz</div>
+  
+      <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+        ☰
+      </div>
+  
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+    <div class="contact-container">
+        <img src="images/contact.jpg" alt="Ali's Photo" class="contact-photo">
+        <h1 class="contact-title">Let's Connect</h1>
+        <p class="contact-description">
+          I'm always happy to connect over cool ideas, opportunities, or just a great tech conversation. Reach out through any of the platforms below:
+        </p>
+      
+        <div class="contact-links">
+          <a href="mailto:ansariaf@uc.mail.edu" target="_blank">
+            <i class="fas fa-envelope"></i> ansariaf@uc.mail.edu
+          </a>
+          <a href="https://www.linkedin.com/in/alifaiyaz/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/AliAbsolute" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://chhotaali.wixsite.com/learningportfolio" target="_blank">
+            <i class="fas fa-award"></i> Honors Portfolio
+          </a>
+
+
+          
+        </div>
+      </div>
+      
+      <script>
+        function toggleMenu() {
+          const nav = document.getElementById("navLinks");
+          const hamburger = document.getElementById("hamburger");
+      
+          nav.classList.toggle("active");
+      
+          // Toggle icon between ☰ and ✕
+          if (nav.classList.contains("active")) {
+            hamburger.textContent = "✕";
+          } else {
+            hamburger.textContent = "☰";
+          }
+        }
+      
+        // Optional: Close menu when any link is clicked
+        document.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            const nav = document.getElementById("navLinks");
+            const hamburger = document.getElementById("hamburger");
+            nav.classList.remove("active");
+            hamburger.textContent = "☰";
+          });
+        });
+      </script>
+
+      
+
+</body>
+</html>

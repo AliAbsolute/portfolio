@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Faiyaz</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  
+  <link rel="icon" type="image/png" href="myfavicon.png">
+  <link rel="shortcut icon" type="image/png" href="myfavicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="photo-background">
+        <img src="images/img1.jpg" class="photo pos1 bg-float animate-fade" />
+        <img src="images/img2.jpg" class="photo pos2 bg-float animate-fade" />
+        <img src="images/img3.jpg" class="photo pos3 bg-float animate-fade" />
+        <img src="images/img4.jpg" class="photo pos4 bg-float animate-fade" />
+        <img src="images/img5.jpg" class="photo pos5 bg-float animate-fade" />
+        <img src="images/img6.jpg" class="photo pos6 bg-float animate-fade" />
+        <img src="images/img7.jpg" class="photo pos7 bg-float animate-fade" />
+        <img src="images/img8.jpg" class="photo pos8 bg-float animate-fade" />
+        <img src="images/img99.jpg" class="photo pos9 bg-float animate-fade" />  
+        <img src="images/img10.jpg" class="photo pos10 bg-float animate-fade" />
+        <img src="images/img11.jpg" class="photo pos11 bg-float animate-fade" />
+        <img src="images/img12.jpg" class="photo pos12 bg-float animate-fade" />
+        <img src="images/img13.jpg" class="photo pos13 bg-float animate-fade" />
+        <img src="images/img14.jpg" class="photo pos14 bg-float animate-fade" />
+        <img src="images/img15.jpg" class="photo pos15 bg-float animate-fade" />
+        <img src="images/img16.jpg" class="photo pos16 bg-float animate-fade" />
+        <img src="images/img17.jpg" class="photo pos17 bg-float animate-fade" />
+        <img src="images/img18.jpg" class="photo pos18 bg-float animate-fade" />
+        <img src="images/img19.jpg" class="photo pos19 bg-float animate-fade" />
+        <img src="images/img20.jpg" class="photo pos20 bg-float animate-fade"/>
+      </div>
+      
+   
+  <div class="main-box">
+    <div class="text-section">
+      <div class="center-content">
+        <h1>Hello, I'm <span class="highlight">Ali</span></h1>
+        <p class="subtitle">Harnessing computers and circuits to navigate life better</p>
+        <p class="intro">
+          I’m a tech enthusiast who loves building solutions that matter. I study at <b>University of Cincinnati.</b> From robots to quantum computing and sustainable AI, I bring ideas to life through code, circuits, and curiosity.
+        </p>
+
+        <div class="buttons">
+          <a href="projects.html" class="btn">Projects</a>
+          <a href="contact.html" class="btn">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-section">
+        <div class="photo-wrapper">
+            <img src="images/side-photo.jpg" alt="Ali's photo" class="side-photo">
+          </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      const hamburger = document.getElementById("hamburger");
+  
+      nav.classList.toggle("active");
+  
+      // Toggle icon between ☰ and ✕
+      if (nav.classList.contains("active")) {
+        hamburger.textContent = "✕";
+      } else {
+        hamburger.textContent = "☰";
+      }
+    }
+  
+    // Optional: Close menu when any link is clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const nav = document.getElementById("navLinks");
+        const hamburger = document.getElementById("hamburger");
+        nav.classList.remove("active");
+        hamburger.textContent = "☰";
+      });
+    });
+  </script>
+
+ 
+</body>
+</html>

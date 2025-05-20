@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Ali Faiyaz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-bar">
+      <div class="nav-logo">Ali Faiyaz</div>
+  
+      <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+        ☰
+      </div>
+  
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="projects-container">
+    <h1 class="projects-title">🛠 Projects I've Built</h1>
+    
+    <div class="projects-columns">
+
+        <!-- Column 1 -->
+        <div class="column">
+          <div class="project-card" onclick="toggleDetails(this)">
+            <img src="images/projects/alert.jpg" alt="ENED 1 Alert Project" />
+            <h3>Alert - A device to save lives!</h3>
+            <p>A smart wearable alert system for safety monitoring.</p>
+            <ul class="details">
+              <li>Microcontroller-powered wearable prototype</li>
+              <li>Activated emergency alerts with sensors</li>
+              <li>Humanitarian project aimed to aid the people of Sierra Leone</li>
+            </ul>
+          </div>
+
+          <div class="project-card" onclick="toggleDetails(this)">
+            <img src="images/projects/compurizz.jpg" alt="ENED 1 Alert Project" />
+            <h3>
+                <a href="https://devpost.com/software/compurizz" target="_blank" class="project-link">
+                  Compurizz
+                </a>
+              </h3>
+            <p>A professional development tool.</p>
+            <ul class="details">
+              <li>Won TPIA award at the Brainrot Jia.seed hackathon</li>
+              <li>Generates customized career roadmaps and skill-building recommendations</li>
+              <li>Integrated using React.js and Node.js</li>
+            </ul>
+          </div>
+      
+          <div class="project-card" onclick="toggleDetails(this)">
+            <img src="images/projects/quantum.jpg" alt="QuantumLeap" />
+            <h3>QuantumLeap</h3>
+            <p>A quantum computing project using Qiskit.</p>
+            <ul class="details">
+              <li>Coded Quantum Algorithms using Qiskit framework in Python</li>
+              <li>Simulated circuits on classical computers using state-vector simulators</li>
+              <li>Learnt key concepts of qubits, superposition, entanglement, and quantum gates</li>
+            </ul>
+          </div>
+      
+          <div class="project-card" onclick="toggleDetails(this)">
+            <img src="images/projects/plastic.png" alt="GreenPlast" />
+            <h3>GreenPlast</h3>
+            <p>An environmentally friendly plastic R&D project.</p>
+            <ul class="details">
+              <li>Developed biodegradable plastic samples</li>
+              <li>Performed tensile and life-cycle analysis</li>
+              <li>Presented findings to a board of judges</li>
+            </ul>
+          </div>
+      
+          <div class="project-card" onclick="toggleDetails(this)">
+            <img src="images/projects/circuit.jpg" alt="DC Circuit Simulator" />
+            <h3>DC Circuit Simulator</h3>
+            <p>Simulated DC circuits and component behavior.</p>
+            <ul class="details">
+              <li>Used Object Oriented Programming Style in C++ for simulation</li>
+              <li>Built various functions performing numerous tasks</li>
+              <li>Analyzed Ohm’s Law and Kirchhoff's Rules</li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Column 2 -->
+        <div class="column">
+          <div class="project-card" onclick="toggleDetails(this)">
+            <img src="images/projects/binbot.jpg" alt="BinBot" />
+            <h3>BinBot</h3>
+            <p>An EV3 robot that sorts bins based on sensor input.</p>
+            <ul class="details">
+              <li>Developed logic using NI LabVIEW</li>
+              <li>Used ultrasonic and color sensors</li>
+              <li>Prototyped an automated waste solution</li>
+            </ul>
+          </div>
+      
+          <div class="project-card" onclick="toggleDetails(this)">
+            <img src="images/projects/recipe.png" alt="SustainGenius" />
+            <h3>
+                <a href="https://devpost.com/software/rizz_up_my_social_score" target="_blank" class="project-link">
+                  SustainGenius
+                </a>
+              </h3>
+            <p>AI-powered web-app to generate recipes.</p>
+            <ul class="details">
+              <li>RevUC Hackathon Project</li>
+              <li>Built using Python, Flask, and HTML/CSS/JS Stack</li>
+              <li>Focused on reducing food waste</li>
+            </ul>
+          </div>
+      
+          <div class="project-card" onclick="toggleDetails(this)">
+            <img src="images/projects/tictactoe.png" alt="Smart Tic Tac Toe" />
+            <h3>Smart Tic Tac Toe AI</h3>
+            <p>Coded for the computer to never lose!</p>
+            <ul class="details">
+              <li>Developed a two-player game for tictactoe</li>
+              <li>Built in C++ with terminal UI</li>
+              <li>Defined a function with intelligence for computer to always win!</li>
+            </ul>
+          </div>
+      
+          <div class="project-card" onclick="toggleDetails(this)">
+            <img src="images/projects/ring.jpg" alt="FADA Ring" />
+            <h3>FADA Ring</h3>
+            <p>NFC-enabled wearable for payments and access.</p>
+            <ul class="details">
+              <li>Proposed an NFC chip into a 3D-printed ring</li>
+              <li>Used for tap-to-pay and door unlock</li>
+              <li>Designed for secure and sleek user experience</li>
+            </ul>
+          </div>
+
+          <div class="project-card" onclick="toggleDetails(this)">
+            <img src="images/projects/youtube.png" alt="YouTube Channel" />
+            <h3>
+                <a href="https://www.youtube.com/@AliAbsolute/featured" target="_blank" class="project-link">
+                  My YouTube Channel – Stories, Skits & Adventures
+                </a>
+              </h3>
+            <p>A passion project where I create videos about life, travel, and fun ideas.</p>
+            <ul class="details">
+              <li>Grew to 58,000+ total views across skits, travel logs, and hobby videos</li>
+              <li>Surpassed 1,000 hours of watch time organically</li>
+              <li>Used editing tools like Adobe Premiere Pro to produce polished content</li>
+            </ul>
+          </div>
+        </div>
+
+     
+      
+      </div>
+      
+      
+  </div>
+
+  <script>
+    function toggleDetails(card) {
+      card.classList.toggle("show-details");
+    }
+  </script>
+  
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      const hamburger = document.getElementById("hamburger");
+  
+      nav.classList.toggle("active");
+  
+      // Toggle icon between ☰ and ✕
+      if (nav.classList.contains("active")) {
+        hamburger.textContent = "✕";
+      } else {
+        hamburger.textContent = "☰";
+      }
+    }
+  
+    // Optional: Close menu when any link is clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const nav = document.getElementById("navLinks");
+        const hamburger = document.getElementById("hamburger");
+        nav.classList.remove("active");
+        hamburger.textContent = "☰";
+      });
+    });
+  </script>
+
+</body>
+</html>
