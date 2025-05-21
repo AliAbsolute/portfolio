@@ -735,6 +735,10 @@ body {
     .contact-description {
       display: none;
     }
+
+    .projects-title {
+      display: none;
+    }
   }
     
   
