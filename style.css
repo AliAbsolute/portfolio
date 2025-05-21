@@ -325,9 +325,12 @@
   /* Projects */
 
   .projects-container {
-    max-width: 1000px;
-    margin: 60px auto;
-    padding: 0 20px;
+    /* max-width: 1000px; */
+    max-width: 1200px;
+    /* margin: 60px auto; */
+    margin: 0 auto;
+    /*padding: 0 20px; */
+    padding: 2rem;
     font-family: 'Inter', sans-serif;
   }
   
@@ -340,9 +343,12 @@
   }
   
   .projects-grid {
-    display: flex;
+   /* display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
   }
   
@@ -351,13 +357,17 @@
     animation: slideUp 0.6s ease forwards;
     animation-delay: 0s;
     background-color: #fff;
-    border-radius: 16px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-    padding: 1rem;
+    /* border-radius: 16px; */
+    border-radius: 12px;
+    /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    /* padding: 1rem; */
+    padding: 1.2rem;
     margin: 1rem;
     max-width: 400px;
     width: 100%;
     box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
   }
   
 
@@ -405,7 +415,7 @@
   }
   
   .project-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-4px) scale(1.03);   
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
   }
 
@@ -673,10 +683,61 @@ body {
   }
 }
 
-   /* NAV BASE */
+   /* NEW CHANGES */
 
-  
-  
-  
+   @media (max-width: 768px) {
+    .bg-float {
+      display: none;
+    }
+  }
 
+  @media (max-width: 768px) {
+    /* Hide image on mobile */
+    .image-section {
+      display: none;
+    }
+  
+    /* Add spacing around main content */
+    .main-box {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 90%;
+      padding: 2rem;
+      margin: 2rem auto;
+      text-align: center;
+      box-sizing: border-box;
+    }
+  
+    .main-box .text-section {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .main-box .text-section h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+  
+    .main-box p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .main-box .nav-buttons {
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact-description {
+      display: none;
+    }
+  }
+    
+  
+    
+  
   
